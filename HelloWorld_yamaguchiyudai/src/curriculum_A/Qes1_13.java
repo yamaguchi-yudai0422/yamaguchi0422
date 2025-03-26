@@ -5,6 +5,45 @@ public class Qes1_13 {
 	public static void main(String[] args) {
 		
 	// 変数の初期化と代入
+		// バイト型
+	      byte byteValue = 0;    
+	      
+	    // 短整数型
+		  short shortValue = 0;   
+		  
+		// 整数型
+		  int intValue = 0;   
+		  
+		/// 長整数型
+		  long longValue = 0L;      
+
+		// 単精度浮動小数点数型
+		        float floatValue = 0.0f;    
+		        
+		// 倍精度浮動小数点数型
+		        double doubleValue = 0.0;  
+		        
+		// 文字型
+		        char charValue = '\u0000';   
+		        
+	    // 文字列型
+		        String stringValue = "";   
+
+		// ブーリアン型
+		        boolean booleanValue = false; 
+		        
+		 // 初期化した値を出力  
+		        
+		        System.out.println("byte: " + byteValue);
+		        System.out.println("short: " + shortValue);
+		        System.out.println("int: " + intValue);
+		        System.out.println("long: " + longValue);
+		        System.out.println("float: " + floatValue);
+		        System.out.println("double: " + doubleValue);
+		        System.out.println("char: " + charValue);
+		        System.out.println("string: " + stringValue);
+		        System.out.println("boolean: " + booleanValue);
+		
 		
     //バイト型
         byte byteVal = 10;
@@ -112,7 +151,10 @@ public class Qes1_13 {
         System.out.println("体重は" + weight + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood + "です");
  
-       // BMI計算
+      // BMI計算
+        
+       // 身長をm単位に変換
+        height = height / 100;
         double bmi = weight / (height * height);
         
        // 結果を出力
@@ -122,25 +164,52 @@ public class Qes1_13 {
         String name2= "鈴木一郎";
         
        // 年齢
-        int age2= 48;
+        int age2= 24;
         
        // 身長
-        double height2= 337.0;
+        double height2= 168.5;
         
        // 体重
-        double weight2= 128.4;
+        double weight2= 64.2;
         
        // 好きな食べ物
         String favoriteFood2= "オムライス";
+        
+       // BMI 
+        double bmi2 = 22.6;
 
        // 結果を出力
         System.out.println("初めまして" + name2+ "です");
         System.out.println("年齢は" + age2+ "歳です");
         System.out.println("身長は" + height2+ "cmです");
         System.out.println("体重は" + weight2+"kgです");
-        System.out.println("好きな食べ物は" + favoriteFood2 + "です"); 
+        System.out.println("好きな食べ物は" + favoriteFood2 + "です");
+        System.out.println("BMI" +  bmi2 + "です"); 
         
-       // 25歳以上ならtrueと出力される
+     // 年齢・身長・体重を和算で自己代入（2倍にする）
+        
+       // 年齢 = 24 + 24 = 48
+        age2 += age2;              // 年齢 = 24 + 24 = 48 
+        
+        // 身長 = 168.5 + 168.5 = 337.0
+        height2 += height2;        
+        
+        // 体重 = 64.2 + 64.2 = 128.
+        weight2 += weight2;     
+
+    // BMI を再計算
+      // cm → m
+       double height2InMeters = height2 / 100;  
+        bmi2 = weight2 / (height2InMeters * height2InMeters);
+        	
+     //	出力   
+        System.out.println("年齢は" + age2 + "歳です");
+        System.out.println("身長は" + height2 + "cmです");
+        System.out.println("体重は" + weight2 + "kgです");
+        System.out.println("好きな食べ物は" + favoriteFood2 + "です");
+        System.out.println("BMIは" + String.format("%.2f", bmi2)+ "です"); 
+        
+      // 25歳以上ならtrueと出力される
         boolean isover25 = age2>= 25 ? true : false;
        
        //結果を出力
