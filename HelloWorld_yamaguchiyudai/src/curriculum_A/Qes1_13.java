@@ -189,13 +189,13 @@ public class Qes1_13 {
      // 年齢・身長・体重を和算で自己代入（2倍にする）
         
        // 年齢 = 24 + 24 = 48
-        age2 += age2;              // 年齢 = 24 + 24 = 48 
+      int age3 = age2 += age2;              // 年齢 = 24 + 24 = 48 
         
         // 身長 = 168.5 + 168.5 = 337.0
-        height2 += height2;        
+      double height3 = height2 += height2;        
         
         // 体重 = 64.2 + 64.2 = 128.
-        weight2 += weight2;     
+      double weight3  = weight2 += weight2;     
 
     // BMI を再計算
       // cm → m
@@ -203,9 +203,10 @@ public class Qes1_13 {
         bmi2 = weight2 / (height2InMeters * height2InMeters);
         	
      //	出力   
-        System.out.println("年齢は" + age2 + "歳です");
-        System.out.println("身長は" + height2 + "cmです");
-        System.out.println("体重は" + weight2 + "kgです");
+        System.out.println("初めまして" + name2+ "です");
+        System.out.println("年齢は" + age3 + "歳です");
+        System.out.println("身長は" + height3 + "cmです");
+        System.out.println("体重は" + weight3 + "kgです");
         System.out.println("好きな食べ物は" + favoriteFood2 + "です");
         System.out.println("BMIは" + String.format("%.2f", bmi2)+ "です"); 
         
