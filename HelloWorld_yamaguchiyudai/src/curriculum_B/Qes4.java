@@ -8,7 +8,7 @@ public class Qes4 {
 		for (int i = 1; i <= 9; i++) {
             for (int j = 1; j <= 9; j++) {
                 
-        // 出力
+        // 0埋めして 出力
          System.out.printf("│%02d×%02d=%02d│", i, j, i * j);
             }
 		
