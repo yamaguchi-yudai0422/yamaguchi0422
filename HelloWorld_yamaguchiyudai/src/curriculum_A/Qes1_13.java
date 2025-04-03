@@ -27,7 +27,7 @@ public class Qes1_13 {
 		        char charValue = '\u0000';   
 		        
 	    // 文字列型
-		        String stringValue = "";   
+		        String stringValue = null;   
 
 		// ブーリアン型
 		        boolean booleanValue = false; 
