@@ -53,7 +53,7 @@ public class Qes7 {
             }
         } 
         
-        // 各生徒の平均点を計算して表示
+        // 各生徒の平均点を計算して出力
         
         double totalSum = 0; // 全体の平均計算用
         for (int i = 0; i < numStudents; i++) {
@@ -79,7 +79,7 @@ public class Qes7 {
             System.out.printf("%sの平均点は%.2f点です\n", subjects[j], subjectAvg);
         }
 
-        // 全体の平均点を計算して表示
+        // 全体の平均点を計算して出力
         double overallAverage = subjectSum / numSubjects;
         System.out.printf("全体の平均点: %.2f", overallAverage);
 
