@@ -4,17 +4,17 @@ import java.util.Random;
 
 public class Curriculum_New_1_18 {
 
-	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
+	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力する
 	public static void printMessage(String message, int version) {
 		System.out.println(message + " " + version);
 	}
 
-	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
+	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力
 	public static void multiply(int a, int b) {
 		System.out.println(a * b);
 	}
 
-	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
+	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力する
 	public static void printArray(int[] arr) {
 
 		for (int num : arr) {
@@ -23,7 +23,7 @@ public class Curriculum_New_1_18 {
 		System.out.println();
 	}
 
-	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
+	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力
 	public static void multiply(double a, double b) {
 		System.out.println(a + b);
 	}
