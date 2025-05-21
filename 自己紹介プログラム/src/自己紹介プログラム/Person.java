@@ -28,7 +28,8 @@ class Person {
 	  void print() {
 	    System.out.println("名前は" + this.name + "です");
 	    System.out.println("年は" + this.age + "です");
-	    System.out.printf("BMIは%.2fです\n\n", this.bmi());
+	    System.out.printf("BMIは%dです\n\n", (int)this.bmi());
+
 	  }
 	// 問題10: 人数の合計を出力するstaticメソッド
 	  void printCount() {
